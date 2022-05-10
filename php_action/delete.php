@@ -1,8 +1,6 @@
 <?php
-
-session_start();
-
 require_once 'db_connect.php';
+include_once 'includes/session.php';
 
 if(isset($_POST['btn-deletar'])):
     $id = mysqli_escape_string($connect, $_POST['id']);

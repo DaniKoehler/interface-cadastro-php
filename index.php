@@ -1,10 +1,9 @@
 <?php
-session_start();
-
 include_once 'php_action/confere_cep.php';
 include_once 'includes/mensagem.php';
 include_once 'includes/header.php';
 include_once 'php_action/db_connect.php';
+include_once 'includes/session.php';
 ?>
 
 <div class="row">
@@ -64,7 +63,7 @@ include_once 'php_action/db_connect.php';
         </table>
         <br>
         <a href="adicionar.php" class="btn">Novo Cliente</a>
-        <a href="login.php" class="btn red">Desconectar</a>
+        <a href="php_action/logout.php" class="btn red">Desconectar</a>
     </div>
 </div>
 

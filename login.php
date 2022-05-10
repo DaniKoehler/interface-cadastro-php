@@ -1,15 +1,11 @@
 <?php
-session_start();
-
 include_once 'includes/header.php';
 include_once 'includes/mensagem.php';
 include_once 'estilo/estilo.php';
-include_once 'php_action/verifica_login.php';
-include_once 'php_action/db_connect.php';
 ?>
 
 <div id="central" class="row">
-    <form class="col s6" action="" method="POST">
+    <form class="col s6" action="php_action/verifica_login.php" method="POST">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>

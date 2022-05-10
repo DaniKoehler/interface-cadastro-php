@@ -1,10 +1,8 @@
 <?php
-
-session_start();
-
 require_once 'db_connect.php';
 require_once 'confere_cep.php';
 require_once 'seguranca.php';
+include_once 'includes/session.php';
 
 if(isset($_POST['btn-cadastrar'])){
 
@@ -35,4 +33,3 @@ if(isset($_POST['btn-cadastrar'])){
         }
     }
 }
-session_unset();
